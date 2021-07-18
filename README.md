@@ -1,4 +1,8 @@
-# creativeagencyvuecli
+# Frontend Mentor - Creative agency single page site
+## Welcome! 👋
+![Design preview for the Creative agency single page site coding challenge](./preview.jpg)
+
+
 
 ## Project setup
 ```
