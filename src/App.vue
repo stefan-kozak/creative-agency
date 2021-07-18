@@ -1,26 +1,47 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <navigationTop />
+  <heroHeader />
+  <designArticle />
+  <companyStrategy />
+  <sliderPresentation />
+  <scheduleCall />
 </template>
 
-<script>
-import HelloWorld from "./components/HelloWorld.vue";
+<script setup>
+import navigationTop from "@/components/navigationTop.vue";
+import heroHeader from "@/components/heroHeader.vue";
+import designArticle from "@/components/designArticle.vue";
+import companyStrategy from "@/components/companyStrategy.vue";
+import sliderPresentation from "@/components/sliderPresentation.vue";
+import scheduleCall from "@/components/scheduleCall.vue";
 
-export default {
-  name: "App",
-  components: {
-    HelloWorld,
-  },
-};
+{
+  navigationTop,
+    heroHeader,
+    designArticle,
+    companyStrategy,
+    sliderPresentation,
+    scheduleCall;
+}
 </script>
 
 <style lang="scss">
+@import "@/assets/scss/settings.scss";
+
+body {
+  font-family: "Commissioner", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin: 0;
+  width: 100%;
 }
 </style>

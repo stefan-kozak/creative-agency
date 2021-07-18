@@ -1,0 +1,17 @@
+//FONT
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;800&display=swap');
+
+//COLORS
+$primary-color: #F94F4F; // BASIC  RED
+$bg-black: #191921;
+$white: #fff;
+$text-black: #000;
+
+
+//FUNCTIONS
+
+$browser-context: 16; // Default size
+
+@function em($pixels, $context: $browser-context) {
+    @return #{$pixels/$context}em;
+}
