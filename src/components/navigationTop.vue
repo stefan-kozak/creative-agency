@@ -105,14 +105,14 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.5s ease;
+    transition: background-color 0.2s, transform 0.5s ease;
 
     .menu-icon {
       width: 2em;
       height: 5px;
       background-color: $bg-black;
       border-radius: 3px;
-      transition: all 0.5s ease;
+      transition: background-color 0.2s, transform 0.5s ease;
     }
 
     .menu-icon::before,
@@ -123,7 +123,8 @@ nav {
       background-color: $bg-black;
       position: absolute;
       border-radius: 3px;
-      transition: all 0.5s ease;
+      transition: background-color 0.2s, transform 0.5s ease;
+
     }
 
     .menu-icon::before {
@@ -134,16 +135,16 @@ nav {
     }
 
     &.open .menu-icon {
-      transform: translateX(-2em);
+      
       background-color: transparent;
     }
 
     &.open .menu-icon::before {
-      transform: rotate(45deg) translateX(1.4em) translateY(-1.4em);
+      transform: rotate(45deg);
     }
 
     &.open .menu-icon::after {
-      transform: rotate(-45deg) translateX(1.4em) translateY(1.4em);
+      transform: rotate(-45deg);
     }
   }
 }
