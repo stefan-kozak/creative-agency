@@ -124,7 +124,6 @@ nav {
       position: absolute;
       border-radius: 3px;
       transition: background-color 0.2s, transform 0.5s ease;
-
     }
 
     .menu-icon::before {
@@ -135,7 +134,6 @@ nav {
     }
 
     &.open .menu-icon {
-      
       background-color: transparent;
     }
 
@@ -156,6 +154,7 @@ nav {
   nav {
     display: flex;
     padding: 0;
+    overflow: hidden;
 
     .logo {
       padding: 3em 2em;
